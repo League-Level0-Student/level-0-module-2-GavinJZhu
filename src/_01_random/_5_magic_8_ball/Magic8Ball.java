@@ -9,9 +9,11 @@ import java.util.Random;
 public class Magic8Ball {
 
 	// 1. Make a main method that includes all the steps below
-
-	// 2. Get the user to enter a question for the 8 ball to answer
+public static void main(String[] args) {
 	
+}
+	// 2. Get the user to enter a question for the 8 ball to answer
+	JOptionPane.showInputDialog("Enter in a question.");
 
 	// 3. Make a variable and initialize it to a random number.
 	//     ** You will need to make a random object!
