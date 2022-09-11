@@ -13,8 +13,12 @@ public class LotteryNumbers {
            int rn5 = ran.nextInt(99 - 10 + 1) + 10;
            int rn6 = ran.nextInt(99 - 10 + 1) + 10;
        String hm = String.valueOf(rn);
-       hm+=" "+String.valueOf(rn2);
-           JOptionPane.showMessageDialog(null, hm );
+       hm+="  "+String.valueOf(rn2);
+       hm+="  "+String.valueOf(rn3);
+       hm+="  "+String.valueOf(rn4);
+       hm+="  "+String.valueOf(rn5);
+       hm+="  "+String.valueOf(rn6);
+           JOptionPane.showMessageDialog(null, hm,"Lottery Ticket",1);
 
     }
 }
