@@ -13,7 +13,6 @@ public class MethodCall {
 	}
 
 	static void printMessage(String aMessage) {
-		 String aMessage = JOptionPane.showMessageDialog(null, "Hello World!");
 		System.out.println(aMessage);
 	}
 }
