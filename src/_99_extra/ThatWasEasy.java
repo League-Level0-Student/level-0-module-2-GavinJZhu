@@ -11,33 +11,31 @@ import javax.swing.JLabel;
 
 public class ThatWasEasy extends MouseAdapter {
 
-    @Override
-    public void mouseClicked(MouseEvent arg0) {
-        /* Use the Sound.speak method to make the button work. */
-        
-    }
+	@Override
+	public void mouseClicked(MouseEvent arg0) {
+		/* Use the Sound.speak method to make the button work. */
 
-    public static void main(String[] args) {
-        new ThatWasEasy();
-    }
+	}
 
-    public ThatWasEasy() {
-        showEasyButton();
-        easyButtonImage.addMouseListener(this);
-    }
+	public static void main(String[] args) {
+		new ThatWasEasy();
+	}
 
-    JLabel easyButtonImage;
+	public ThatWasEasy() {
+		showEasyButton();
+		easyButtonImage.addMouseListener(this);
+	}
 
-    private void showEasyButton() {
-        JFrame quizWindow = new JFrame();
-        quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        quizWindow.setVisible(true);
+	JLabel easyButtonImage;
 
-        Icon icon = new ImageIcon(getClass().getResource("easy_button.jpg"));
-        this.easyButtonImage = new JLabel(icon);
-        quizWindow.add(easyButtonImage);
-        quizWindow.pack();
-    }
+	private void showEasyButton() {
+		JFrame quizWindow = new JFrame();
+		quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		quizWindow.setVisible(true);
+
+		Icon icon = new ImageIcon(getClass().getResource("easy_button.jpg"));
+		this.easyButtonImage = new JLabel(icon);
+		quizWindow.add(easyButtonImage);
+		quizWindow.pack();
+	}
 }
-
-

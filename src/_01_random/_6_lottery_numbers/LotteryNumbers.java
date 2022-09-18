@@ -4,21 +4,21 @@ import javax.swing.*;
 import java.util.Random;
 
 public class LotteryNumbers {
-    public static void main(String[] args) {
-           Random ran = new Random();
-           int rn = ran.nextInt(99 - 10 + 1) + 10;
-           int rn2 = ran.nextInt(99 - 10 + 1) + 10;
-           int rn3 = ran.nextInt(99 - 10 + 1) + 10;
-           int rn4 = ran.nextInt(99 - 10 + 1) + 10;
-           int rn5 = ran.nextInt(99 - 10 + 1) + 10;
-           int rn6 = ran.nextInt(99 - 10 + 1) + 10;
-       String hm = String.valueOf(rn);
-       hm+="  "+String.valueOf(rn2);
-       hm+="  "+String.valueOf(rn3);
-       hm+="  "+String.valueOf(rn4);
-       hm+="  "+String.valueOf(rn5);
-       hm+="  "+String.valueOf(rn6);
-           JOptionPane.showMessageDialog(null, hm,"Lottery Ticket",1);
+	public static void main(String[] args) {
+		Random ran = new Random();
+		int rn = ran.nextInt(99 - 10 + 1) + 10;
+		int rn2 = ran.nextInt(99 - 10 + 1) + 10;
+		int rn3 = ran.nextInt(99 - 10 + 1) + 10;
+		int rn4 = ran.nextInt(99 - 10 + 1) + 10;
+		int rn5 = ran.nextInt(99 - 10 + 1) + 10;
+		int rn6 = ran.nextInt(99 - 10 + 1) + 10;
+		String hm = String.valueOf(rn);
+		hm += "  " + String.valueOf(rn2);
+		hm += "  " + String.valueOf(rn3);
+		hm += "  " + String.valueOf(rn4);
+		hm += "  " + String.valueOf(rn5);
+		hm += "  " + String.valueOf(rn6);
+		JOptionPane.showMessageDialog(null, hm, "Lottery Ticket", 1);
 
-    }
+	}
 }
