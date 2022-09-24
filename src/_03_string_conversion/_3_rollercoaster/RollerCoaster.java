@@ -15,7 +15,7 @@ public class RollerCoaster {
 		if (heightAsInt >= 42 ) { 
 			JOptionPane.showMessageDialog(null, "You can ride the coaster with someone else!");
 		}
-		else if (heightAsInt > 48) {
+		else if (48 <= heightAsInt) {
 			JOptionPane.showMessageDialog(null,"Hurray! You are tall enough to ride the coaster alone!");
 		}
 		else {
