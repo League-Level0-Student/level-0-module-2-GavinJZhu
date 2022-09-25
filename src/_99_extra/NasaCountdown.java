@@ -25,9 +25,10 @@ public class NasaCountdown {
 		while (countdownInt > 0) {
 			countdownInt = countdownInt-1;
 			System.out.println(countdownInt);
+			Sound.speak(String.valueOf(countdownInt));
 		}
 		// 4. Use the Sound.speak method to hear the countdown.
-		Sound.speak(countdown);
+		
 		// 6. Use the following code to make the program wait one second for each
 		Thread.sleep(1000);
 
